@@ -67,6 +67,8 @@
                 \})
 
                 let g:ale_linters = extend(get(g:, 'ale_linters', {}), {'clojure': ['clj-kondo', 'clojure_lsp']})
+                let g:ale_fixers = extend(get(g:, 'ale_fixers', {}), {'clojure': ['cljfmt']})
+                let g:ale_clojure_cljfmt_options = '--remove-multiple-non-indenting-spaces'
 
                 " ── Rainbow parentheses ──
                 let g:rainbow_active = 1
